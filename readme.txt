@@ -23,3 +23,6 @@
 9. Stop by Ctrl+Alt+M
 10. Create a workspace inside the folder by  file > save workspace as...
 11. From now , just go inside the folder,open terminal and press code . 
+
+
+* for mac m1 read this > https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
