@@ -1,0 +1,12 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "echo 'Compiling...' && cd $dir && g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 2 ./a.out < input.txt > output.txt && echo 'Completed!!'"
+    },
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange"
+}
