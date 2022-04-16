@@ -1,34 +1,9 @@
 {
     "version": "2.0.0",
-    "configurations": [
-        {
-            "name": "C++ Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "targetArchitecture": "x86_64",
-            "program": "${workspaceRoot}/enigme",
-            "preLaunchTask": "build",
-            "internalConsoleOptions": "openOnSessionStart",
-            "logging": {
-                "moduleLoad": true,
-                "programOutput": true,
-                "trace": false
-            },
-            "showDisplayString": false,
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
-            "environment": [],
-            "externalConsole": true,
-            "osx": {
-                "MIMode": "lldb"
-            }
-        }
-    ],
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ build active file",
+            "label": "Ranaks g++ --std=gnu++17 build active file",
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
