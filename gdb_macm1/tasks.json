@@ -3,8 +3,9 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "Ranaks g++ --std=gnu++17 build active file",
-            "command": "/usr/bin/g++",
+            "label": "Ranaks g++ build active file",
+            //"command": "/usr/bin/g++",
+            "command": "/opt/homebrew/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -20,7 +21,8 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compiler: /usr/bin/g++ --std=gnu++17"
+            // "detail": "compiler: /usr/bin/g++ --std=gnu++17",
+            "detail": "compiler: /opt/homebrew/bin/g++ --std=gnu++17"
         }
     ]
 }

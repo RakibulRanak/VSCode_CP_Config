@@ -7,7 +7,8 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "echo 'Compiling...' && cd $dir && g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 3 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'"
+        //"cpp": "echo 'Compiling...' && cd $dir && /usr/bin/g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
+        "cpp": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'"
     },
     "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange",
@@ -15,9 +16,12 @@
     "notebook.output.textLineLimit": 500,
     "debug.javascript.resourceRequestOptions": {},
     "C_Cpp.formatting": "vcFormat",
-    "C_Cpp.default.compilerPath": "/usr/bin/g++ --std=gnu++17",
+    // "C_Cpp.default.compilerPath": "/usr/bin/g++ --std=gnu++17",
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++ --std=gnu++17",
 }
 //https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
+// if you want to use hombrew g++ watch the following video
+//https://www.youtube.com/watch?v=wY24ehH6mC0
 //for linux
 {
     "window.zoomLevel": 2,

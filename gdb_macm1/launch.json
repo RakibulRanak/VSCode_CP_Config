@@ -10,7 +10,7 @@
             "request": "launch",
             "targetArchitecture": "x86_64",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "preLaunchTask": "Ranaks g++ --std=gnu++17 build active file",
+            "preLaunchTask": "Ranaks g++ build active file",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
