@@ -1,5 +1,5 @@
 //for mac
-
+// brew install timeout
 {
     "window.zoomLevel": 1,
     "editor.fontSize": 13,
@@ -18,13 +18,10 @@
     "C_Cpp.default.compilerPath": "/usr/bin/g++ --std=gnu++17",
 }
 //https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
-
 //for linux
-
 {
     "window.zoomLevel": 2,
     "code-runner.executorMap": {
-    
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
