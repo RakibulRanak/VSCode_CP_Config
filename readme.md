@@ -1,24 +1,49 @@
->1. Install c++ extension
+# VS Code Config for M1 Mac
 
->2. Install Code Runner extension
+1. Install [C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) VS Code extension
+2. Install & Config timeout:
 
->3. Go to Settings > Extensions > Run Code Configuration > Executor Map > paste from setting.json file
+   > brew install coreutils
 
->4. Create a folder
+   > sudo ln -s /usr/local/bin/gtimeout /usr/local/bin/timeout
 
->5. Inside create input.txt and output.txt
+3. Then do this:
 
->6. Create Cpp file
+   > cd ~/Documents/
 
->7. Layout
+   > mkdir input_output
 
->8. Save and Run by Ctrl+Alt+N
+   > touch input.txt output.txt
 
->9. Stop by Ctrl+Alt+M
+4. Install gcc & Config it:
 
->10. Create a workspace inside the folder by  file > save workspace as...
+   > brew install gcc
 
->11. From now , just go inside the folder,open terminal and press code . 
+   > cd /opt/homebrew/bin/
 
+   > ln -s gcc-11 gcc
 
-* for mac m1 read this > https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
+   > ln -s g++-11 g++
+
+   Run this to ensure your mac recognize the homebrew's gcc & g++ compiler:
+
+   > where gcc g++
+
+5. In VS Code navigate to:
+
+   > Settings > Extensions > Run Code Configuration > Executor Map > settings.json
+
+   Copy everything from the settings.json in the repo and paste it there.
+
+6. Create a layout (by opening a cpp file, ~/Documents/input_output/input.txt & ~/Documents/input_output/output.txt) and save that as a workspace. Save and Run by Ctrl+Alt+N & Stop by Ctrl+Alt+M
+
+# Configure Debugger
+
+1. Install [lldb](https://marketplace.visualstudio.com/items?itemName=lanza.lldb-vscode) VS Code Extension
+2. Copy everything from the gdb_macm1 folder and paste it in your <b>working directory’s .vscode</b> folder.
+
+# For more info
+
+Read this:
+
+> https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
