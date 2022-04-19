@@ -5,10 +5,13 @@
     "editor.fontSize": 13,
     "code-runner.executorMap": {
         "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        //"cpp": "echo 'Compiling...' && cd $dir && /usr/bin/g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
-        "cpp": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/g++ --std=gnu++17 $fileName  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'"
+
+        "python": "cd $dir && echo 'Running...' && /opt/homebrew/bin/timeout 8 python3 '$fileName' < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
+        "java": "echo 'Compiling...' && cd $dir && javac '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 5 java '$fileNameWithoutExt' < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
+        "c": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/gcc --std=gnu17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
+
+        //"cpp": "echo 'Compiling...' && cd '$dir' && /usr/bin/g++ --std=gnu++17 '$fileName'  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
+        "cpp": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/g++ --std=gnu++17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'"
     },
     "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange",
