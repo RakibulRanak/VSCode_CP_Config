@@ -37,3 +37,23 @@
     "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange"
 }
+// windows
+// install MinGW and check in terminal if g++ is found ( g++ --version )
+
+{
+    "editor.fontSize": 15,
+    "workbench.colorTheme": "Default Dark+",
+    "code-runner.executorMap": {
+        "cpp": "echo 'Compiling...' && cd $dir && g++ -std=c++17 $fileName -o temp  && echo 'Compiling...' &&  temp <  D://CPP//IO//input.txt >  D://CPP//IO//output.txt && echo 'Completed!!'"
+    },
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "code-runner.saveFileBeforeRun": true,
+    "notebook.output.textLineLimit": 500,
+    "debug.javascript.resourceRequestOptions": {},
+    "C_Cpp.formatting": "vcFormat",
+    "json.schemas": [],
+    "cmake.configureSettings": {},
+    "settingsSync.ignoredExtensions": [],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
